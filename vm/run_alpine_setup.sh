@@ -6,7 +6,7 @@ if [ ! -f "image.iso" ]; then
 else
     echo "(skipping, image already found)"
 fi
-echo ">>> Formatting new disk (removing old one if already exist)..."
+echo ">>> Formatting new disk..."
 if [ -f "image.qcow2" ]; then
     echo "qcow2 image already exists! Remove it manually if it is actually no longer used."
     exit 1
